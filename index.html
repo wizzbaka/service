@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables - Serveur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sélectionner une Table</h1>
+        <button id="configButton">Configuration</button>
+        <div id="tablesGrid" class="grid-container">
+            <!-- Les tables seront générées par JavaScript -->
+        </div>
+        <div id="orderDetails" style="margin-top: 20px; display: none;">
+            <h2>Commandes pour la Table <span id="orderTableNumber"></span></h2>
+            <ul id="orderList"></ul>
+            <button id="clearTableButton">Vider la Table</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

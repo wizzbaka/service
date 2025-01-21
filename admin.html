@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jsAdmin.js" defer></script>
+  <link rel="stylesheet" href="sAdmin.css">
+  <title>Admin</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Configuration du Menu</h1>
+    <button id="returnButton">Retour </button>
+    <form id="addCategoryForm">
+        <h2>Ajouter une Catégorie</h2>
+        <label for="categoryName">Nom de la Catégorie :</label>
+        <input type="text" id="categoryName" name="categoryName" required>
+        <button type="submit">Ajouter Catégorie</button>
+    </form>
+    
+    <form id="addProductForm" style="margin-top: 20px;">
+        <h2>Ajouter un Produit</h2>
+        <label for="categorySelect">Catégorie :</label>
+        <select id="categorySelect" name="categorySelect" required></select>
+        
+        <label for="productName">Nom du Produit :</label>
+        <input type="text" id="productName" name="productName" required>
+        <button type="submit">Ajouter Produit</button>
+    </form>
+    
+    <div id="menuConfig" style="margin-top: 20px;">
+        <h2>Menu Configuré</h2>
+        <ul id="menuList"></ul>
+    </div>
+</div>
+
+</body>
+</html>

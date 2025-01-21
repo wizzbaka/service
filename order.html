@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prise de Commande - Serveur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prise de Commande pour la Table <span id="tableNumberDisplay"></span></h1>
+        <button id="configButton">Configuration</button>
+        <button id="returnButton">Retour</button>
+        <div id="menu">
+            <h2>Menu</h2>
+            <div id="categoriesGrid" class="grid-container">
+                <!-- Les catégories seront générées par JavaScript -->
+            </div>
+            <div id="productsGrid" class="grid-container" style="display: none;">
+                <!-- Les produits spécifiques seront générées par JavaScript -->
+            </div>
+        </div>
+        <form id="orderForm">
+            <input type="hidden" id="tableNumber" name="tableNumber">
+            <input type="hidden" id="product" name="product">
+            <input type="hidden" id="quantity" name="quantity" value="1">
+            <input type="hidden" id="options" name="options">
+        </form>
+        <div id="orderList">
+            <h2>Commandes en Cours</h2>
+            <ul id="currentOrders"></ul>
+        </div>
+        <button id="sendToKitchenButton">Envoyer à la Cuisine</button>
+        <div id="orderHistory">
+            <h2>Commandes Envoyées</h2>
+            <ul id="orders"></ul>
+        </div>
+    </div>
+    <script src="order.js"></script>
+</body>
+</html>
