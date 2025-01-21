@@ -99,6 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   //button de retour
   document.getElementById('returnButton').addEventListener('click', function(){
-    window.location.href = '../interface_serveur/order.html';
+    window.location.href = 'order.html';
   } );;
 });
