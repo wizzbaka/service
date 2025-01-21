@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Bouton de configuration
     document.getElementById('configButton').addEventListener('click', function() {
-        window.location.href = '../administration/admin.html';
+        window.location.href = 'admin.html';
     });
 
     // Bouton de retour
